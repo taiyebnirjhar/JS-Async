@@ -47,7 +47,5 @@ function certificate() {
 /*******************************/
 // Call Back Hell
 enroll(() => {
-  courseProgress(() => {
-    certificate();
-  });
+  courseProgress(certificate);
 });
